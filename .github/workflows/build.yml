@@ -33,52 +33,28 @@ jobs:
 
       - name: Set variables
         run: |
-          echo "TAG_NAME=$(date +%Y%m%d%H%M)" >> $GITHUB_ENV
-          echo "RELEASE_NAME=$(date +%Y%m%d%H%M)" >> $GITHUB_ENV
-          echo "YEAR=$(date +%Y)" >> $GITHUB_ENV
-          echo "MONTH=$(date +%m)" >> $GITHUB_ENV
+            echo "NAME=v$(date +%d%m%Y.%H%M)" >> $GITHUB_ENV
         shell: bash
-
-      - name: Get DB-IP Lite Country MMDB database
-        run: |
-          curl -L -o dbip-country-lite.mmdb.gz "https://download.db-ip.com/free/dbip-country-lite-${{ env.YEAR }}-${{ env.MONTH }}.mmdb.gz"
-          gzip -d dbip-country-lite.mmdb.gz
-          mkdir -p db-ip
-          mv dbip-country-lite*.mmdb ./db-ip/dbip-country-lite.mmdb
 
       - name: Build GeoIP files
         run: |
           go run ./ -c ./config.json
-
-      - name: Generate sha256 checksum for dat files
-        run: |
-          cd ./output || exit 1
-          for name in $(ls *.dat); do
-            sha256sum ${name} > ./${name}.sha256sum
-          done
+          cd ../ && rm -rf code
 
       - name: Git push assets to "release" branch
         run: |
-          cd output || exit 1
           git init
           git config --local user.name "github-actions[bot]"
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git checkout -b release
-          git add -A
-          git commit -m "${{ env.RELEASE_NAME }}"
-          git remote add geoip "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}"
-          git push -f geoip release
+          git add geoip_tbd.dat
+          git commit -m "${{ env.NAME }}"
+          git remote add origin "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}"
+          git push -f origin release
 
       - name: Release and upload assets
         run: |
-          gh release create ${{ env.TAG_NAME }} -t ${{ env.RELEASE_NAME }} \
-            ./output/geoip.dat \
-            ./output/geoip.dat.sha256sum \
-            ./output/geoip-only-cn-private.dat \
-            ./output/geoip-only-cn-private.dat.sha256sum \
-            ./output/cn.dat \
-            ./output/cn.dat.sha256sum \
-            ./output/private.dat \
-            ./output/private.dat.sha256sum
+            gh release create ${{ env.NAME }} --generate-notes --latest --title ${{ env.NAME }} ./geoip_tbd.dat
+
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
