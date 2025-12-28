@@ -11,11 +11,10 @@
   ],
   "output": [
     {
-      "type": "binary",
-      "action": "write",
+      "type": "v2rayGeoIPDat",
+      "action": "output",
       "args": {
-        "outputFile": "./geoip_tbd.dat",
-        "format": "dat"
+        "outputName": "geoip_tbd.dat"
       }
     }
   ]
