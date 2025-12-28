@@ -5,19 +5,18 @@
       "action": "add",
       "args": {
         "inputDir": "./data/ips",
-        "wantedList": [ "yandex" ],
-		"onlyIPType": "ipv4"
-		}
-	}
+        "ipVersion": "ipv4"
+      }
+    }
   ],
   "output": [
     {
-      "type": "text",
-      "action": "output",
+      "type": "binary",
+      "action": "write",
       "args": {
-        "outputDir": "./text",
-        "outputExtension": ".dat"
-		}
-	}
+        "outputFile": "./geoip_tbd.dat",
+        "format": "dat"
+      }
+    }
   ]
 }
