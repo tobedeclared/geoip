@@ -6,14 +6,6 @@
       "args": {
         "uri": "./db-ip/dbip-country-lite.mmdb"
       }
-    },
-    {
-      "type": "private",
-      "action": "add"
-    },
-    {
-      "type": "test",
-      "action": "add"
     }
   ],
   "output": [

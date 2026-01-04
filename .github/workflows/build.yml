@@ -50,13 +50,6 @@ jobs:
         run: |
           go run ./ -c ./config.json
 
-      - name: Generate sha256 checksum for dat files
-        run: |
-          cd ./output || exit 1
-          for name in $(ls *.dat); do
-            sha256sum ${name} > ./${name}.sha256sum
-          done
-
       - name: Git push assets to "release" branch
         run: |
           cd output || exit 1
@@ -73,6 +66,5 @@ jobs:
         run: |
           gh release create ${{ env.TAG_NAME }} -t ${{ env.RELEASE_NAME }} \
             ./output/geoip.dat \
-            ./output/geoip.dat.sha256sum \
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
