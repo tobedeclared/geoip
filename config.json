@@ -6,7 +6,15 @@
       "args": {
         "uri": "./db-ip/dbip-country-lite.mmdb"
       }
+    },
+    {
+      "type": "text",
+      "action": "add",
+      "args": {
+        "name": "yandex",
+        "uri": "./data/yandex.txt"
     }
+}
   ],
   "output": [
     {
