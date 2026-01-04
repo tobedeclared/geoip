@@ -66,5 +66,6 @@ jobs:
         run: |
           gh release create ${{ env.TAG_NAME }} -t ${{ env.RELEASE_NAME }} \
             ./output/geoip.dat \
+            ./output/geoip_tbd.dat \
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -17,13 +17,23 @@
 }
   ],
   "output": [
-    {
-      "type": "v2rayGeoIPDat",
-      "action": "output",
-      "args": {
-        "outputDir": "./output",
-        "outputName": "geoip.dat"
-      }
-    }
+//    {
+//      "type": "v2rayGeoIPDat",
+//      "action": "output",
+//      "args": {
+//        "outputDir": "./output",
+//        "outputName": "geoip.dat"
+//      }
+//    }
+	{
+	  "type": "v2rayGeoIPDat",
+	  "action": "output",
+	  "args": {
+		"outputDir": "./output",
+		"outputName": "geoip_tbd.dat",
+		"wantedList": ["yandex"]
+	  }
+	}
+	
   ]
 }
