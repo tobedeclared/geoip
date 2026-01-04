@@ -6,6 +6,13 @@
       "args": {
         "name": "yandex",
         "uri": "./data/yandex.txt"
+    },
+    {
+      "type": "text",
+      "action": "add",
+      "args": {
+        "name": "cloudflare",
+        "uri": "./data/cloudflare.txt"
     }
 }
   ],
