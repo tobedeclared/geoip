@@ -4,32 +4,10 @@ This project releases GeoIP files monthly for routing purpose in Project V. It a
 
 ## Download links
 
-For all GeoIP files released by this project, see the [release branch](https://github.com/v2fly/geoip/tree/release). Below are download URLs for some GeoIP files:
+For all GeoIP files released by this project, see the [release branch](https://github.com/tobedeclared/geoip/tree/release). Below are download URLs for some GeoIP files:
 
 - **geoip.dat**：
-  - [https://github.com/v2fly/geoip/releases/latest/download/geoip.dat](https://github.com/v2fly/geoip/releases/latest/download/geoip.dat)
-  - [https://cdn.jsdelivr.net/gh/v2fly/geoip@release/geoip.dat](https://cdn.jsdelivr.net/gh/v2fly/geoip@release/geoip.dat)
-- **geoip.dat.sha256sum**：
-  - [https://github.com/v2fly/geoip/releases/latest/download/geoip.dat.sha256sum](https://github.com/v2fly/geoip/releases/latest/download/geoip.dat.sha256sum)
-  - [https://cdn.jsdelivr.net/gh/v2fly/geoip@release/geoip.dat.sha256sum](https://cdn.jsdelivr.net/gh/v2fly/geoip@release/geoip.dat.sha256sum)
-- **geoip-only-cn-private.dat**：
-  - [https://github.com/v2fly/geoip/releases/latest/download/geoip-only-cn-private.dat](https://github.com/v2fly/geoip/releases/latest/download/geoip-only-cn-private.dat)
-  - [https://cdn.jsdelivr.net/gh/v2fly/geoip@release/geoip-only-cn-private.dat](https://cdn.jsdelivr.net/gh/v2fly/geoip@release/geoip-only-cn-private.dat)
-- **geoip-only-cn-private.dat.sha256sum**：
-  - [https://github.com/v2fly/geoip/releases/latest/download/geoip-only-cn-private.dat.sha256sum](https://github.com/v2fly/geoip/releases/latest/download/geoip-only-cn-private.dat.sha256sum)
-  - [https://cdn.jsdelivr.net/gh/v2fly/geoip@release/geoip-only-cn-private.dat.sha256sum](https://cdn.jsdelivr.net/gh/v2fly/geoip@release/geoip-only-cn-private.dat.sha256sum)
-- **cn.dat**：
-  - [https://github.com/v2fly/geoip/releases/latest/download/cn.dat](https://github.com/v2fly/geoip/releases/latest/download/cn.dat)
-  - [https://cdn.jsdelivr.net/gh/v2fly/geoip@release/cn.dat](https://cdn.jsdelivr.net/gh/v2fly/geoip@release/cn.dat)
-- **cn.dat.sha256sum**：
-  - [https://github.com/v2fly/geoip/releases/latest/download/cn.dat.sha256sum](https://github.com/v2fly/geoip/releases/latest/download/cn.dat.sha256sum)
-  - [https://cdn.jsdelivr.net/gh/v2fly/geoip@release/cn.dat.sha256sum](https://cdn.jsdelivr.net/gh/v2fly/geoip@release/cn.dat.sha256sum)
-- **private.dat**：
-  - [https://github.com/v2fly/geoip/releases/latest/download/private.dat](https://github.com/v2fly/geoip/releases/latest/download/private.dat)
-  - [https://cdn.jsdelivr.net/gh/v2fly/geoip@release/private.dat](https://cdn.jsdelivr.net/gh/v2fly/geoip@release/private.dat)
-- **private.dat.sha256sum**：
-  - [https://github.com/v2fly/geoip/releases/latest/download/private.dat.sha256sum](https://github.com/v2fly/geoip/releases/latest/download/private.dat.sha256sum)
-  - [https://cdn.jsdelivr.net/gh/v2fly/geoip@release/private.dat.sha256sum](https://cdn.jsdelivr.net/gh/v2fly/geoip@release/private.dat.sha256sum)
+  - [https://github.com/tobedeclared/geoip/releases/latest/download/geoip.dat](https://github.com/tobedeclared/geoip/releases/latest/download/geoip.dat)
 
 ## GeoIP usage example in V2Ray
 
@@ -114,7 +92,7 @@ Supported `output` formats:
 2. Clone project code: `git clone https://github.com/v2fly/geoip.git`
 3. Navigate to project root directory: `cd geoip`
 4. Install project dependencies: `go mod download`
-5. Edit config file `config.json` by referencing the configuration options in [configuration.md](https://github.com/v2fly/geoip/blob/HEAD/configuration.md)
+5. Edit config file `config.json` by referencing the configuration options in [configuration.md](https://github.com/tobedeclared/geoip/blob/HEAD/configuration.md)
 6. Generate files: `go run ./`
 
 ### Notices
@@ -122,7 +100,7 @@ Supported `output` formats:
 - `go run ./` will use `config.json` in current directory as the default config file, or use `go run ./ -c /path/to/your/own/config/file.json` to specify your own config file.
 - The generated files are located at `output` directory by default.
 - Run `go run ./ -h` for more usage information.
-- See [configuration.md](https://github.com/v2fly/geoip/blob/HEAD/configuration.md) for all configuration options.
+- See [configuration.md](https://github.com/tobedeclared/geoip/blob/HEAD/configuration.md) for all configuration options.
 
 ## CLI showcase
 
