@@ -6,7 +6,7 @@
       "args": {
         "name": "yandex",
         "uri": "./data/yandex.txt"
-		}
+	  }
 	},
     {
       "type": "text",
@@ -14,7 +14,16 @@
       "args": {
         "name": "cloudflare",
         "uri": "./data/cloudflare.txt"
-		}
+	  }
+	},
+    {
+      "type": "text",
+      "action": "add",
+      "args": {
+        "name": "telegram",
+        "uri": "https://core.telegram.org/resources/cidr.txt",
+		"onlyIPType": "ipv4"
+	  }
 	}
   ],
   "output": [
