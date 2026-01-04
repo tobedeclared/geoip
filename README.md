@@ -1,7 +1,3 @@
-# GeoIP for V2Ray
-
-This project releases GeoIP files monthly for routing purpose in Project V. It also provides a command line interface(CLI) tool for users to customize their own GeoIP files.
-
 ## Download links
 
 For all GeoIP files released by this project, see the [release branch](https://github.com/tobedeclared/geoip/tree/release). Below are download URLs for some GeoIP files:
