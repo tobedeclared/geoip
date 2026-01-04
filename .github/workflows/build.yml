@@ -39,13 +39,6 @@ jobs:
           echo "MONTH=$(date +%m)" >> $GITHUB_ENV
         shell: bash
 
-      - name: Get DB-IP Lite Country MMDB database
-        run: |
-          curl -L -o dbip-country-lite.mmdb.gz "https://download.db-ip.com/free/dbip-country-lite-${{ env.YEAR }}-${{ env.MONTH }}.mmdb.gz"
-          gzip -d dbip-country-lite.mmdb.gz
-          mkdir -p db-ip
-          mv dbip-country-lite*.mmdb ./db-ip/dbip-country-lite.mmdb
-
       - name: Build GeoIP files
         run: |
           go run ./ -c ./config.json

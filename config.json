@@ -1,13 +1,6 @@
 {
   "input": [
     {
-      "type": "dbipCountryMMDB",
-      "action": "add",
-      "args": {
-        "uri": "./db-ip/dbip-country-lite.mmdb"
-      }
-    },
-    {
       "type": "text",
       "action": "add",
       "args": {
@@ -17,23 +10,13 @@
 }
   ],
   "output": [
-//    {
-//      "type": "v2rayGeoIPDat",
-//      "action": "output",
-//      "args": {
-//        "outputDir": "./output",
-//        "outputName": "geoip.dat"
-//      }
-//    }
 	{
 	  "type": "v2rayGeoIPDat",
 	  "action": "output",
 	  "args": {
 		"outputDir": "./output",
-		"outputName": "geoip_tbd.dat",
-		"wantedList": ["yandex"]
+		"outputName": "geoip_tbd.dat"
 	  }
 	}
-	
   ]
 }
