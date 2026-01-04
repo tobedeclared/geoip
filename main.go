@@ -4,7 +4,7 @@ import (
 	"flag"
 	"fmt"
 	"log"
-	"github.com/tobedeclared/geoip/lib"
+	"github.com/v2fly/geoip/lib"
 )
 
 var (
