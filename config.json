@@ -28,8 +28,8 @@
       "type": "text",
       "action": "add",
       "args": {
-        "name": "mirtankov",
-        "uri": "./data/mirtankov.txt"
+        "name": "lesta",
+        "uri": "./data/lesta.txt"
 	  }
 	},
     {
