@@ -24,6 +24,14 @@
         "uri": "./data/cn.txt"
 	  }
 	},
+	{
+      "type": "text",
+      "action": "add",
+      "args": {
+        "name": "mirtankov",
+        "uri": "./data/mirtankov.txt"
+	  }
+	},
     {
       "type": "text",
       "action": "add",
