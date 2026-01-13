@@ -16,6 +16,14 @@
         "uri": "./data/cloudflare.txt"
 	  }
 	},
+	{
+      "type": "text",
+      "action": "add",
+      "args": {
+        "name": "cn",
+        "uri": "./data/cn.txt"
+	  }
+	},
     {
       "type": "text",
       "action": "add",
