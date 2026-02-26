@@ -1,0 +1,156 @@
+{
+  "input": [
+    {
+      "type": "text",
+      "action": "add",
+      "args": {
+        "name": "yandex",
+        "uri": "./data/yandex.txt"
+	  }
+	},
+	{
+      "type": "text",
+      "action": "add",
+      "args": {
+        "name": "vk",
+        "uri": "./data/vk.txt"
+	  }
+	},
+	{
+      "type": "text",
+      "action": "add",
+      "args": {
+        "name": "wildberries",
+        "uri": "./data/wildberries.txt"
+	  }
+	},
+	{
+      "type": "text",
+      "action": "add",
+      "args": {
+        "name": "ozon",
+        "uri": "./data/ozon.txt"
+	  }
+	},
+	{
+      "type": "text",
+      "action": "add",
+      "args": {
+        "name": "lesta",
+        "uri": "./data/lesta.txt"
+	  }
+	},
+	{
+      "type": "text",
+      "action": "add",
+      "args": {
+        "name": "intel",
+        "uri": "./data/intel.txt"
+	  }
+	},
+    {
+      "type": "text",
+      "action": "add",
+      "args": {
+        "name": "cloudflare",
+        "uri": "https://www.cloudflare.com/ips-v4/#",
+		"onlyIPType": "ipv4"
+	  }
+	},
+	{
+      "type": "text",
+      "action": "add",
+      "args": {
+        "name": "cn",
+        "uri": "./data/cn.txt"
+	  }
+	},
+    {
+      "type": "text",
+      "action": "add",
+      "args": {
+        "name": "tiktok",
+        "uri": "https://raw.githubusercontent.com/M4jx/TikTokBlockList/refs/heads/main/ipv4s",
+		"onlyIPType": "ipv4"
+	  }
+	},
+    {
+      "type": "text",
+      "action": "add",
+      "args": {
+        "name": "whatsapp",
+        "uri": "https://raw.githubusercontent.com/HybridNetworks/whatsapp-cidr/refs/heads/main/WhatsApp/whatsapp_cidr_ipv4.txt",
+		"onlyIPType": "ipv4"
+	  }
+	},
+    {
+      "type": "text",
+      "action": "add",
+      "args": {
+        "name": "youtube",
+        "uri": "https://raw.githubusercontent.com/touhidurrr/iplist-youtube/refs/heads/main/lists/cidr4.txt",
+		"onlyIPType": "ipv4"
+	  }
+	},
+    {
+      "type": "text",
+      "action": "add",
+      "args": {
+        "name": "telegram",
+        "uri": "https://core.telegram.org/resources/cidr.txt",
+		"onlyIPType": "ipv4"
+	  }
+	},
+    {
+      "type": "text",
+      "action": "add",
+      "args": {
+        "name": "facebook",
+        "uri": "https://raw.githubusercontent.com/platformbuilds/FacebookIPLists/refs/heads/master/facebook_ip_list.lst",
+		"onlyIPType": "ipv4"
+	  }
+	},
+	{
+      "type": "text",
+      "action": "add",
+      "args": {
+        "name": "exclude",
+        "uri": "./data/wildberries.txt"
+	  }
+	},
+	{
+      "type": "text",
+      "action": "add",
+      "args": {
+        "name": "exclude",
+        "uri": "./data/ozon.txt"
+	  }
+	},
+    {
+      "type": "text",
+      "action": "add",
+      "args": {
+        "name": "exclude",
+        "uri": "./data/yandex.txt"
+	  }
+	},
+	{
+      "type": "text",
+      "action": "add",
+      "args": {
+        "name": "exclude",
+        "uri": "./data/vk.txt"
+	  }
+	},
+  ],
+  "output": [
+	{
+	  "type": "v2rayGeoIPDat",
+	  "action": "output",
+	  "args": {
+		"outputDir": "./output",
+		"outputName": "geoip_tbd.dat"
+	  }
+	}
+  ]
+}

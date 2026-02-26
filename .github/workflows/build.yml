@@ -1,0 +1,54 @@
+name: Сборка файла геоданных GeoIP
+on:
+  push:
+    branches:
+      - master
+    paths-ignore:
+      - "**/README.md"
+      - ".gitignore"
+      - "**/dependabot.yml"
+      
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: GeoIP
+    runs-on: ubuntu-latest
+    steps:
+      - name: Клонирование кодовой базы из репозитория GitHub
+        uses: actions/checkout@v6
+
+      - name: Настройка окружения Go
+        uses: actions/setup-go@v6
+        with:
+          go-version-file: go.mod
+          cache-dependency-path: go.sum
+
+      - name: Установка переменных окружения
+        run: |
+          echo "NAME=geoip-v$(date +%d.%m.%Y)" >> $GITHUB_ENV
+        shell: bash
+
+      - name: Сборка файлов GeoIP
+        run: |
+          go run ./ -c ./config.json
+
+      - name: Отправка собранных данных в ветку «release» через Git
+        run: |
+          cd output || exit 1
+          git init
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b release
+          git add -A
+          git commit -m "${{ env.NAME }}"
+          git remote add geoip "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}"
+          git push -f geoip release
+
+      - name: Создание релиза и загрузка файлов
+        run: |
+          gh release create ${{ env.NAME }} -t ${{ env.NAME }} ./output/geoip_tbd.dat
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
