@@ -49,6 +49,6 @@ jobs:
 
       - name: Создание релиза и загрузка файлов
         run: |
-          gh release create ${{ env.NAME }} -t ${{ env.NAME }} ./output/geoip_tbd.dat
+          gh release create ${{ env.NAME }} --generate-notes --latest --title ${{ env.NAME }} ./output/geoip_tbd.dat
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
