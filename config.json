@@ -110,6 +110,17 @@
 		"onlyIPType": "ipv4"
 	  }
 	},
+    {
+      "type": "text",
+      "action": "add",
+      "args": {
+        "name": "torrent",
+        "uri": "https://raw.githubusercontent.com/ngosang/trackerslist/refs/heads/master/trackers_all_ip.txt",
+		"onlyIPType": "ipv4",
+		"removePrefixesInLine": [ "://", "udp", "http" ],
+        "removeSuffixesInLine": [ ":1337", ":80", ":451", ":6969", ":23333", ":3218", ":2710", ":25", ":1984", ":1333",  "/announce" ]
+	  }
+	},
 	{
       "type": "text",
       "action": "add",
