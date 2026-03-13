@@ -119,6 +119,14 @@
         "onlyIPType": "ipv4"
 	  }
 	},
+    {
+      "type": "maxmindGeoLite2CountryCSV",
+      "action": "add",
+      "args": {
+        "wantedList": [ "ru" ],
+        "onlyIPType": "ipv4"
+      }
+    },
 	{
       "type": "text",
       "action": "add",
