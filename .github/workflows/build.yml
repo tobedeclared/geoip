@@ -29,7 +29,16 @@ jobs:
       - name: Установка переменных окружения
         run: |
           echo "NAME=geoip-v$(date +%d.%m.%Y)" >> $GITHUB_ENV
+          echo "YEAR=$(date +%Y)" >> $GITHUB_ENV
+          echo "MONTH=$(date +%m)" >> $GITHUB_ENV
         shell: bash
+
+      - name: Скачивание базы DB-IP Lite Country MMDB
+        run: |
+          curl -L -o dbip-country-lite.mmdb.gz "https://download.db-ip.com/free/dbip-country-lite-${{ env.YEAR }}-${{ env.MONTH }}.mmdb.gz"
+          gzip -d dbip-country-lite.mmdb.gz
+          mkdir -p db-ip
+          mv dbip-country-lite*.mmdb ./db-ip/dbip-country-lite.mmdb
 
       - name: Сборка файлов GeoIP
         run: |
