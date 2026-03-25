@@ -48,6 +48,14 @@
         "uri": "./data/intel.txt"
 	  }
 	},
+	{
+      "type": "text",
+      "action": "add",
+      "args": {
+        "name": "vodafone",
+        "uri": "./data/vodafone.txt"
+	  }
+	},	
     {
       "type": "text",
       "action": "add",
@@ -105,7 +113,7 @@
       "type": "text",
       "action": "add",
       "args": {
-        "name": "facebook",
+        "name": "meta",
         "uri": "https://raw.githubusercontent.com/platformbuilds/FacebookIPLists/refs/heads/master/facebook_ip_list.lst",
 		"onlyIPType": "ipv4"
 	  }
