@@ -131,7 +131,7 @@
       "type": "text",
       "action": "add",
       "args": {
-        "name": "exclude",
+        "name": "sds",
         "uri": "./data/wildberries.txt"
 	  }
 	},
@@ -139,7 +139,7 @@
       "type": "text",
       "action": "add",
       "args": {
-        "name": "exclude",
+        "name": "sds",
         "uri": "./data/ozon.txt"
 	  }
 	},
@@ -147,7 +147,7 @@
       "type": "text",
       "action": "add",
       "args": {
-        "name": "exclude",
+        "name": "sds",
         "uri": "./data/yandex.txt"
 	  }
 	},
@@ -155,7 +155,7 @@
       "type": "text",
       "action": "add",
       "args": {
-        "name": "exclude",
+        "name": "sds",
         "uri": "./data/vk.txt"
 	  }
 	},
