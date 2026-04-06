@@ -135,14 +135,14 @@
         "onlyIPType": "ipv4"
 	  }
 	},
-	{
-      "type": "text",
-      "action": "add",
-      "args": {
-        "name": "sds",
-        "uri": "./data/wildberries.txt"
-	  }
-	},
+//	{
+//      "type": "text",
+//      "action": "add",
+//      "args": {
+//        "name": "sds",
+//        "uri": "./data/wildberries.txt"
+//	  }
+//	},
 	{
       "type": "text",
       "action": "add",
