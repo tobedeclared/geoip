@@ -55,6 +55,14 @@
         "name": "vodafone",
         "uri": "./data/vodafone.txt"
 	  }
+	},
+	{
+      "type": "text",
+      "action": "add",
+      "args": {
+        "name": "telegram",
+        "uri": "./data/vodafone.txt"
+	  }
 	},	
     {
       "type": "text",
