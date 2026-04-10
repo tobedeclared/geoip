@@ -52,6 +52,14 @@
       "type": "text",
       "action": "add",
       "args": {
+        "name": "valve",
+        "uri": "./data/valve.txt"
+	  }
+	},
+	{
+      "type": "text",
+      "action": "add",
+      "args": {
         "name": "vodafone",
         "uri": "./data/vodafone.txt"
 	  }
@@ -63,7 +71,7 @@
         "name": "telegram",
         "uri": "./data/vodafone.txt"
 	  }
-	},	
+	},
     {
       "type": "text",
       "action": "add",
@@ -135,14 +143,14 @@
         "onlyIPType": "ipv4"
 	  }
 	},
-//	{
-//      "type": "text",
-//      "action": "add",
-//      "args": {
-//        "name": "sds",
-//        "uri": "./data/wildberries.txt"
-//	  }
-//	},
+	{
+      "type": "text",
+      "action": "add",
+      "args": {
+        "name": "sds",
+        "uri": "./data/wildberries.txt"
+	  }
+	},
 	{
       "type": "text",
       "action": "add",
