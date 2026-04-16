@@ -61,8 +61,15 @@
       "action": "add",
       "args": {
         "name": "cloudflare",
-        "uri": "https://www.cloudflare.com/ips-v4/#",
-		"onlyIPType": "ipv4"
+        "uri": "https://www.cloudflare.com/ips-v4/#"
+	  }
+	},
+    {
+      "type": "text",
+      "action": "add",
+      "args": {
+        "name": "cloudflare",
+        "uri": "https://www.cloudflare.com/ips-v6/#"
 	  }
 	},
 	{
@@ -78,8 +85,15 @@
       "action": "add",
       "args": {
         "name": "tiktok",
-        "uri": "https://raw.githubusercontent.com/M4jx/TikTokBlockList/refs/heads/main/ipv4s",
-		"onlyIPType": "ipv4"
+        "uri": "https://raw.githubusercontent.com/M4jx/TikTokBlockList/refs/heads/main/ipv4s"
+	  }
+	},
+    {
+      "type": "text",
+      "action": "add",
+      "args": {
+        "name": "tiktok",
+        "uri": "https://raw.githubusercontent.com/M4jx/TikTokBlockList/refs/heads/main/ipv6s"
 	  }
 	},
     {
@@ -87,8 +101,7 @@
       "action": "add",
       "args": {
         "name": "whatsapp",
-        "uri": "https://raw.githubusercontent.com/HybridNetworks/whatsapp-cidr/refs/heads/main/WhatsApp/whatsapp_cidr_ipv4.txt",
-		"onlyIPType": "ipv4"
+        "uri": "https://raw.githubusercontent.com/HybridNetworks/whatsapp-cidr/refs/heads/main/WhatsApp/whatsapp_cidr_ipv4.txt"
 	  }
 	},
     {
@@ -96,8 +109,15 @@
       "action": "add",
       "args": {
         "name": "youtube",
-        "uri": "https://raw.githubusercontent.com/touhidurrr/iplist-youtube/refs/heads/main/lists/cidr4.txt",
-		"onlyIPType": "ipv4"
+        "uri": "https://raw.githubusercontent.com/touhidurrr/iplist-youtube/refs/heads/main/lists/cidr4.txt"
+	  }
+	},
+    {
+      "type": "text",
+      "action": "add",
+      "args": {
+        "name": "youtube",
+        "uri": "https://raw.githubusercontent.com/touhidurrr/iplist-youtube/refs/heads/main/lists/cidr6.txt"
 	  }
 	},
     {
@@ -105,8 +125,7 @@
       "action": "add",
       "args": {
         "name": "telegram",
-        "uri": "https://core.telegram.org/resources/cidr.txt",
-		"onlyIPType": "ipv4"
+        "uri": "https://core.telegram.org/resources/cidr.txt"
 	  }
 	},
     {
@@ -114,8 +133,15 @@
       "action": "add",
       "args": {
         "name": "meta",
-        "uri": "https://raw.githubusercontent.com/platformbuilds/FacebookIPLists/refs/heads/master/facebook_ip_list.lst",
-		"onlyIPType": "ipv4"
+        "uri": "https://raw.githubusercontent.com/platformbuilds/FacebookIPLists/refs/heads/master/facebook_ip_list.lst"
+	  }
+	},
+    {
+      "type": "text",
+      "action": "add",
+      "args": {
+        "name": "meta",
+        "uri": "https://raw.githubusercontent.com/platformbuilds/FacebookIPLists/refs/heads/master/facebook_ipv6_list.lst"
 	  }
 	},
     {
@@ -123,8 +149,7 @@
       "action": "add",
       "args": {
         "uri": "./db-ip/dbip-country-lite.mmdb",
-        "wantedList": [ "ru" ],
-        "onlyIPType": "ipv4"
+        "wantedList": [ "ru" ]
 	  }
 	},
 	{
