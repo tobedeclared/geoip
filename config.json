@@ -132,6 +132,14 @@
       "type": "text",
       "action": "add",
       "args": {
+        "name": "telegram-test",
+        "uri": "https://core.telegram.org/resources/cidr.txt"
+	  }
+	},	
+    {
+      "type": "text",
+      "action": "add",
+      "args": {
         "name": "meta",
         "uri": "https://raw.githubusercontent.com/platformbuilds/FacebookIPLists/refs/heads/master/facebook_ip_list.lst"
 	  }
