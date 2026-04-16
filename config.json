@@ -56,14 +56,6 @@
         "uri": "./data/valve.txt"
 	  }
 	},
-	{
-      "type": "text",
-      "action": "add",
-      "args": {
-        "name": "vodafone",
-        "uri": "./data/vodafone.txt"
-	  }
-	},
     {
       "type": "text",
       "action": "add",
