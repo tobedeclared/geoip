@@ -127,14 +127,6 @@
         "name": "telegram",
         "uri": "https://core.telegram.org/resources/cidr.txt"
 	  }
-	},
-    {
-      "type": "text",
-      "action": "add",
-      "args": {
-        "name": "telegram-test",
-        "uri": "https://core.telegram.org/resources/cidr.txt"
-	  }
 	},	
     {
       "type": "text",
