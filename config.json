@@ -144,14 +144,14 @@
         "uri": "https://raw.githubusercontent.com/platformbuilds/FacebookIPLists/refs/heads/master/facebook_ipv6_list.lst"
 	  }
 	},
-    {
-      "type": "dbipCountryMMDB",
-      "action": "add",
-      "args": {
-        "uri": "./db-ip/dbip-country-lite.mmdb",
-        "wantedList": [ "ru" ]
-	  }
-	},
+//    {
+//      "type": "dbipCountryMMDB",
+//      "action": "add",
+//      "args": {
+//        "uri": "./db-ip/dbip-country-lite.mmdb",
+//        "wantedList": [ "ru" ]
+//	  }
+//	},
 	{
       "type": "text",
       "action": "add",
