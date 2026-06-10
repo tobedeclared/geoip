@@ -108,6 +108,30 @@
       "type": "text",
       "action": "add",
       "args": {
+        "name": "whatsapp",
+        "uri": "https://iplist.opencck.org/?format=text&data=cidr4&site=whatsapp.com"
+	  }
+	},
+    {
+      "type": "text",
+      "action": "add",
+      "args": {
+        "name": "meta",
+        "uri": "https://iplist.opencck.org/?format=text&data=cidr4&site=whatsapp.com"
+	  }
+	},
+    {
+      "type": "text",
+      "action": "add",
+      "args": {
+        "name": "meta",
+        "uri": "https://raw.githubusercontent.com/HybridNetworks/whatsapp-cidr/refs/heads/main/WhatsApp/whatsapp_cidr_ipv4.txt"
+	  }
+	},
+    {
+      "type": "text",
+      "action": "add",
+      "args": {
         "name": "youtube",
         "uri": "https://raw.githubusercontent.com/touhidurrr/iplist-youtube/refs/heads/main/lists/cidr4.txt"
 	  }
@@ -144,14 +168,6 @@
         "uri": "https://raw.githubusercontent.com/platformbuilds/FacebookIPLists/refs/heads/master/facebook_ipv6_list.lst"
 	  }
 	},
-//    {
-//      "type": "dbipCountryMMDB",
-//      "action": "add",
-//      "args": {
-//        "uri": "./db-ip/dbip-country-lite.mmdb",
-//        "wantedList": [ "ru" ]
-//	  }
-//	},
 	{
       "type": "text",
       "action": "add",
