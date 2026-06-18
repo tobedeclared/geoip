@@ -72,14 +72,6 @@
         "uri": "https://www.cloudflare.com/ips-v4/#"
 	  }
 	},
-    {
-      "type": "text",
-      "action": "add",
-      "args": {
-        "name": "cloudflare",
-        "uri": "https://www.cloudflare.com/ips-v6/#"
-	  }
-	},
 	{
       "type": "text",
       "action": "add",
@@ -100,24 +92,8 @@
       "type": "text",
       "action": "add",
       "args": {
-        "name": "tiktok",
-        "uri": "https://raw.githubusercontent.com/M4jx/TikTokBlockList/refs/heads/main/ipv6s"
-	  }
-	},
-    {
-      "type": "text",
-      "action": "add",
-      "args": {
         "name": "youtube",
         "uri": "https://raw.githubusercontent.com/touhidurrr/iplist-youtube/refs/heads/main/lists/cidr4.txt"
-	  }
-	},
-    {
-      "type": "text",
-      "action": "add",
-      "args": {
-        "name": "youtube",
-        "uri": "https://raw.githubusercontent.com/touhidurrr/iplist-youtube/refs/heads/main/lists/cidr6.txt"
 	  }
 	},
     {
@@ -142,14 +118,6 @@
       "args": {
         "name": "meta",
         "uri": "https://raw.githubusercontent.com/platformbuilds/FacebookIPLists/refs/heads/master/facebook_ip_list.lst"
-	  }
-	},
-    {
-      "type": "text",
-      "action": "add",
-      "args": {
-        "name": "meta",
-        "uri": "https://raw.githubusercontent.com/platformbuilds/FacebookIPLists/refs/heads/master/facebook_ipv6_list.lst"
 	  }
 	},
     {
