@@ -85,7 +85,8 @@
       "action": "add",
       "args": {
         "name": "tiktok",
-        "uri": "https://raw.githubusercontent.com/M4jx/TikTokBlockList/refs/heads/main/ipv4s"
+        "uri": "https://raw.githubusercontent.com/M4jx/TikTokBlockList/refs/heads/main/ipv4s",
+		"onlyIPType": "ipv4"
 	  }
 	},
     {
@@ -93,7 +94,8 @@
       "action": "add",
       "args": {
         "name": "youtube",
-        "uri": "https://raw.githubusercontent.com/touhidurrr/iplist-youtube/refs/heads/main/lists/cidr4.txt"
+        "uri": "https://raw.githubusercontent.com/touhidurrr/iplist-youtube/refs/heads/main/lists/cidr4.txt",
+		"onlyIPType": "ipv4"
 	  }
 	},
     {
@@ -101,15 +103,8 @@
       "action": "add",
       "args": {
         "name": "telegram",
-        "uri": "https://core.telegram.org/resources/cidr.txt"
-	  }
-	},
-    {
-      "type": "text",
-      "action": "add",
-      "args": {
-        "name": "telegram",
-        "uri": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo-lite/geoip/telegram.list"
+        "uri": "https://core.telegram.org/resources/cidr.txt",
+		"onlyIPType": "ipv4"                 
 	  }
 	},
     {
@@ -117,7 +112,8 @@
       "action": "add",
       "args": {
         "name": "meta",
-        "uri": "https://raw.githubusercontent.com/platformbuilds/FacebookIPLists/refs/heads/master/facebook_ip_list.lst"
+        "uri": "https://raw.githubusercontent.com/platformbuilds/FacebookIPLists/refs/heads/master/facebook_ip_list.lst",
+		"onlyIPType": "ipv4"
 	  }
 	},
     {
@@ -125,7 +121,8 @@
       "action": "add",
       "args": {
         "name": "meta",
-        "uri": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo-lite/geoip/facebook.list"
+        "uri": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo-lite/geoip/facebook.list",
+		"onlyIPType": "ipv4"
 	  }
 	},
     {
@@ -133,7 +130,8 @@
       "action": "add",
       "args": {
         "name": "meta",
-        "uri": "https://iplist.opencck.org/?format=text&data=cidr4&site=whatsapp.com"
+        "uri": "https://iplist.opencck.org/?format=text&data=cidr4&site=whatsapp.com",
+		"onlyIPType": "ipv4"
 	  }
 	},
     {
@@ -141,7 +139,8 @@
       "action": "add",
       "args": {
         "name": "meta",
-        "uri": "https://raw.githubusercontent.com/HybridNetworks/whatsapp-cidr/refs/heads/main/WhatsApp/whatsapp_cidr_ipv4.txt"
+        "uri": "https://raw.githubusercontent.com/HybridNetworks/whatsapp-cidr/refs/heads/main/WhatsApp/whatsapp_cidr_ipv4.txt",
+		"onlyIPType": "ipv4"
 	  }
 	},
 	{
